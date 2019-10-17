@@ -1,0 +1,12 @@
+<div>
+  <h2><%= @article.title%></h2>
+  <div><%= @article.created_at%></div>
+  <div><%= @article.proper%></div>
+  <div>------------------------</div>
+  <h2>Comments</h2>
+  <% @article.comments.each do |c| %>
+    <%= c.visitor.name %>
+    <%= c.created_at %>
+    <%= c.content %>
+  <% end %>
+</div>

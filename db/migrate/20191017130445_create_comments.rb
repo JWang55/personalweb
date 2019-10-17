@@ -1,6 +1,7 @@
-class CreateVisitors < ActiveRecord::Migration[5.2]
+class CreateComments < ActiveRecord::Migration[5.2]
   def change
-    create_table :visitors do |t|
+    create_table :comments do |t|
+      t.text :content
       t.string :name
       t.string :email
       t.string :website

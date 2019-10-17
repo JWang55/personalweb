@@ -1,1 +1,3 @@
-articles index
+<% @articles.each do |a| %>
+  <div><%= link_to a.title, article_path(a) %></div>
+<% end %>
